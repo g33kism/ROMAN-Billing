@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx" width="502" height="42">
+	<fx:Declarations>
+		
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			[Bindable]
+			public var item:String = new String();
+			[Bindable]
+			public var qty:String = "0";
+			[Bindable]
+			public var price:String = "0";
+			[Bindable]
+			public var amount:Number=0;
+			
+		]]>
+	</fx:Script>
+		
+		
+		
+	
+		
+	
+	<s:Label id="lblItem" x="22" y="6" width="139" height="16" text="{item}" />
+	<s:Label id="lblQty" x="198" y="9" width="38" text="{qty}"/>
+	<s:Label id="lblPrice" x="281" y="10" width="79" text="Rs.{price}"/>
+	<s:Label id="lblamnt" x="399" y="10" width="79" text="Rs.{Number(qty)*Number(price)}"/>
+</s:Group>
